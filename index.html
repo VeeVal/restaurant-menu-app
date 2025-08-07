@@ -1,9 +1,32 @@
 <html>
     <head>
-       <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
     </head>
     <body>
-	<script src="index.js"></script>
+        <div class="container smythe-regular">
+            <header>
+                <h3>Jimmy's Diner</h3>
+                <h4>The best burgers and pizzas in town.</h4>
+            </header>
+            <section id="menu-items"></section>
+            <section id="order-section">
+                 
+            </section>
+            <section id="complete-order-modal">
+                <form id="order-form">
+                    <h3>Enter card details</h3>
+                    <input type="text" placeholder="Enter your name" id="usersname" name="username">
+                    <input type="number" placeholder="Enter card number" id="cardNumber" name="cardNumber" pattern="^(?:\d[ -]*?){13,16}$">
+                    <input type="number" placeholder="Enter CVV" id="CVV" name="CVV" pattern="/^[0-9]{3,4}$/">
+                    <button type="submit">Pay</button>
+                </form>
+            </section>
+        </div>
+
+	<script src="index.js" type="module"></script>
     </body>
 </html>
 
